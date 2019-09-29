@@ -5,6 +5,7 @@
 #include<cstdlib>
 #include<map>
 #include<cctype>
+#include<iterator>
 using namespace std;
 namespace chys
 {
@@ -45,7 +46,7 @@ void getAllAlpha(string infliename)
     ofstream outFile(outputFilename.c_str());
     //先在文本中输出总共的字母的个数
     outFile<<"总的字母的个数:"<<count<<endl;
-    for(auto iter=Alpha.begin();iter!=Alpha.end();iter++)
+    for(map<char,int>::iterator iter=Alpha.begin();iter!=Alpha.end();iter++)
     {
         outFile<<iter->first<<" "<<iter->second<<endl;
     }
