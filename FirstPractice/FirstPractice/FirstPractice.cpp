@@ -88,7 +88,7 @@ namespace chys
 			/*
 			*dfs 
 			*/
-			void dfs(vector<int> &s, int iend,vector<int> tempres)
+			void dfs(vector<int> &s, int iend,vector<int>& tempres)
 			{
 				if (iend == s.size()) 
 				{
